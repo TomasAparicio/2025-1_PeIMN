@@ -4,10 +4,10 @@
 bool isprime(long n) {
     // precondition checks
     // do something if n <= 1
+    }
     if (n <= 1) {
         std::cerr << "Out of range number: " << n << "\n";
         return false;
-    }
 
     // suppose it is prime
     bool flag = true; 

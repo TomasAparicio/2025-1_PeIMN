@@ -8,7 +8,7 @@ int main(void){
     const int MAX = 100;
 
     while (num != NUM){
-        intentos += 1;
+        intentos ++;
         std::cout << "Adivina un numero entre " << MIN << " y " << MAX <<":\n";
         std::cin >> num;
         
@@ -31,7 +31,7 @@ int main(void){
             continue;
         }
         if (intentos % 10 == 0)
-            { std::cout << "Haz hecho "<< intentos << "Si te quieres salir en cualquier momento pon 0: \n";
+            { std::cout << "Haz hecho "<< intentos << "Si te quieres salir en cualquier momento pon 0:";
         }
     }
 

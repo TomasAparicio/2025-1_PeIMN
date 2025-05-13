@@ -8,7 +8,7 @@ Informar si lo adivino o no
 */
 
 #include <iostream>
-#include <cstdlib>
+#include <random>
 
 // declaration
 void play(int min_val, int max_val);
@@ -21,7 +21,7 @@ int main(void) {
 }
 
 // Implemetation
-void play(int success,in min_val, int max_val)
+void play(int min_val, int max_val)
 {
     const int NUM = min_val+ std::rand() % 100;
     std::cout << NUM

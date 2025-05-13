@@ -1,8 +1,5 @@
-#include <iostream>
-#include <cmath>
 #include <string>
-
- #include"prime_utils.h"
+#include"prime_utils.h"
 
 int main(int argc, char **argv){
 

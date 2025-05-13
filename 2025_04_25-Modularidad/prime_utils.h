@@ -3,3 +3,4 @@
 #include <cmath>
 
 bool isprime(long n);
+void test(void);

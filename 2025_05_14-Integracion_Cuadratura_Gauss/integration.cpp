@@ -49,3 +49,16 @@ double gauss2 (double a, double b, fptr f){
     
     return aux1 * (w0*f(aux1*x_0+aux2) + w1 * f(aux1*x_1+aux2));
 }
+double gauss3 (double a, double b, fptr f){
+
+    double x_0 = -std::sqrt(0.6);
+    double x_1 =  0;
+    double x_2 =  std::sqrt(0.6);
+    double w0  =  5.0/9.0;
+    double w1  =  8.0/9.0;
+    double w2  =  5.0/9.0;
+    double aux1 = (b-a)/2;
+    double aux2 = (b+a)/2;
+    
+    return aux1 * (w0*f(aux1*x_0+aux2) + w1 * f(aux1*x_1+aux2) +  w2 * f(aux1*x_2+aux2));
+}

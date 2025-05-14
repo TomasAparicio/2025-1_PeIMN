@@ -12,3 +12,5 @@ using algtr = std::function <double(double, double, int, fptr f)>;
 double richardson(double a, double b, int steps, fptr f, algtr method, int Order);
 
 double gauss2 (double a, double b, fptr f);
+
+double gauss3 (double a, double b, fptr f);

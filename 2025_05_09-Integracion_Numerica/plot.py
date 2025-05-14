@@ -3,7 +3,7 @@ import numpy as np
 
 
 # read data
-N, Err_Trapecio, Err_Simpson, Err_r_Trapecio, Err_r_Simpson  = np.loadtxt("C:\Laboratorios\2025-1_PeIMN\2025_05_09-Integracion_Numerica/err_vs_N.txt", unpack=True)
+N, Err_Trapecio, Err_Simpson, Err_r_Trapecio, Err_r_Simpson  = np.loadtxt("err_vs_N.txt", unpack=True)
 
 # plot 
 fig, ax = plt.subplots()

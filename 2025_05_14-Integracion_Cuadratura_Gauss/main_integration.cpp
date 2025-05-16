@@ -8,20 +8,27 @@ int main(void)
 {
     std::cout.precision(15);
     std::cout.setf(std::ios::scientific);
+    
+    double a = -2.0;
+    double b =  2.0;
 
-    std::cout << trapezoid(-1.0, 1.0, 10, f) << "\n";
-    std::cout << trapezoid(-1.0, 1.0, 1000, f) << "\n";
-    std::cout << trapezoid(-1.0, 1.0, 10000000, f) << "\n";
+    std::cout << trapezoid(a, b, 10, f) << "\n";
+    std::cout << trapezoid(a, b, 1000, f) << "\n";
+    std::cout << trapezoid(a, b, 10000000, f) << "\n";
 
-    std::cout << simpson(-1.0, 1.0, 10, f) << "\n";
+    std::cout << simpson(a, b, 10, f) << "\n";
 
-    std::cout << richardson(-1.0, 1.0, 10, f, trapezoid, 2) << "\n";
+    std::cout << richardson(a, b, 10, f, trapezoid, 2) << "\n";
 
-    std::cout << richardson(-1.0, 1.0, 10, f, simpson, 4) << "\n";
+    std::cout << richardson(a, b, 10, f, simpson, 4) << "\n";
 
-    std::cout << gauss2(-1.0, 1.0, f) << "\n";
+    std::cout << gauss2(a, b, f) << "\n";
 
-    std::cout << gauss3(-1.0, 1.0, f) << "\n";
+    std::cout << gauss3(a, b, f) << "\n";
+
+    std::cout << gauss5(a, b, f) << "\n";
+
+    std::cout << gauss7(a, b, f) << "\n";
 
 
     return 0;

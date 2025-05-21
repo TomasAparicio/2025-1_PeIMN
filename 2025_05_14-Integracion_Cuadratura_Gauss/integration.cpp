@@ -126,6 +126,7 @@ double gauss7(double a, double b, fptr f){
     w[4] = 0.381830050505119;
     w[5] = 0.279705391489277;
     w[6] = 0.129484966168870;
+    
 
     //capture integral
     double result = 0.0;

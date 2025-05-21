@@ -9,8 +9,8 @@ int main(void)
     std::cout.precision(15);
     std::cout.setf(std::ios::scientific);
     
-    double a = -2.0;
-    double b =  2.0;
+    double a = -1.0;
+    double b =  1.0;
 
     std::cout << trapezoid(a, b, 10, f) << "\n";
     std::cout << trapezoid(a, b, 1000, f) << "\n";

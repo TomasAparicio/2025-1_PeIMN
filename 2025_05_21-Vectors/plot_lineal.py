@@ -11,14 +11,14 @@ h_expected = constants.h  # Valor esperado de h (6.62607015e-34 J·s)
 with open('Regresion_lineal.txt', 'r') as f:
     data = f.readline().split()
     h_estimated = float(data[0])
-    phi = float(data[1])
-    err = float(data[2])
-    m = float(data[3])
-    b = float(data[4])
-    d_m = float(data[5])
-    d_b = float(data[6])
+    h_error = float(data[1])
+    phi = float(data[2])
+    err = float(data[3])
+    m = float(data[4])
+    b = float(data[5])
+    d_m = float(data[6])
+    d_b = float(data[7])
 
-h_error = d_m*e
 phi_error = d_b
 # Leer los datos experimentales originales
 # Asumo que están en 'millikan.txt' con dos columnas: frecuencia (Hz) y voltaje (V)
